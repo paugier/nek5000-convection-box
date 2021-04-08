@@ -1,7 +1,7 @@
 [GENERAL]
 startFrom = 'restart.f04200' time = 0
 stopAt = numSteps
-numSteps = 10000
+numSteps = 1000
 dt = 5e-03
 variableDt = yes
 targetCFL = 0.51

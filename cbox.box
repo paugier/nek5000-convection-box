@@ -1,4 +1,4 @@
-ray1.rea
+cbox.rea
 -2                      spatial dimension
 2                     number of fields
 #========================================================
@@ -13,7 +13,7 @@ ray1.rea
 #
 Box
 -16    -16            nelx,nely,nelz for Box)
-0      1     1      x0 x1 ratio 
-0      1     1      y0 y1 ratio 
+0      1     1      x0 x1 ratio
+0      1     1      y0 y1 ratio
 W  ,W  ,W  ,W  ,    V bc's  ! NB:  3 characters each !
 t  ,t  ,I  ,I  ,    T bc's  !      You must have 2 spaces!!

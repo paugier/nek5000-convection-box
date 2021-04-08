@@ -1,0 +1,16 @@
+*.ma2
+*.re2
+
+build.log
+.state
+.usr
+*.f
+makefile
+obj/*.o
+obj/*.a
+nek5000
+
+SESSION.NAME
+
+*0.f*
+*.nek5000
