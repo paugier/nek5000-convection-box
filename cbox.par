@@ -1,0 +1,42 @@
+[GENERAL]
+startFrom = 'restart.f04200' time = 0
+stopAt = numSteps
+numSteps = 10000
+dt = 5e-03
+variableDt = yes
+targetCFL = 0.51
+writeControl = timestep
+writeInterval = 100
+writeDoublePrecision = yes
+dealiasing = yes
+timeStepper = bdf3
+
+
+
+[PROBLEMTYPE]
+equation = incompNS
+
+
+[VELOCITY]
+residualTol = 1e-15
+residualProj = 1e-15
+writeToFieldFile = yes
+viscosity = 1.2625783811276351e-05
+density = 1.0
+advection = yes
+
+[PRESSURE]
+residualTol = 1e-15
+residualProj = 1e-15
+writeToFieldFile = yes
+
+
+[TEMPERATURE]
+residualTol = 1e-15
+residualProj = 1e-15
+writeToFieldFile = yes
+conductivity = 1.778279410038923e-05
+rhoCp = 1.0
+
+[MESH]
+writeToFieldFile = yes
