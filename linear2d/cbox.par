@@ -1,0 +1,37 @@
+[GENERAL]
+startFrom = 'base_flow.restart'
+stopAt = numSteps
+numSteps = 100
+dt = 5e-03
+variableDt = yes
+targetCFL = 0.51
+writeControl = timestep
+writeInterval = 10
+writeDoublePrecision = yes
+dealiasing = yes
+timeStepper = bdf3
+
+userparam02 = 0.71000 # PRANDTL number
+userparam03 = 1.84e08 # RAYLEIGH number
+
+
+
+[PROBLEMTYPE]
+equation = incompLinNS #incompNS  
+solveBaseflow = no
+variableProperties = yes
+
+[PRESSURE]
+residualtol = 1e-15
+residualproj = no
+
+[VELOCITY]
+residualtol = 1e-15
+residualproj = no
+density = 1
+viscosity = 1.0 #5.234189443498848e-05
+
+[TEMPERATURE] # temperature with Hmholtz 
+rhoCp = 1.0
+conductivity = 1.0 #7.372097807744857e-05
+residualtol = 1e-15

@@ -63,7 +63,14 @@ nekmpi cbox 4
 
 The first argument is the case name and the second the number of processors.
 
-## Visualisation
+## Clean all files:
+
+```bash
+make clean
+rm  -f cbox.ma2  cbox.re2  makefile build.log
+```
+
+## Visualization
 
 One needs to initialize the 3D visualization with `visnek cbox`. This program
 produces something like the following output:
